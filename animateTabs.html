@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animateTabs.css">
+    <title>Animate with Tabs.</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="channel-info">
+          <img class="channel-info__img" src="https://assets.codepen.io/308367/new-profile-pic-10.jpg" alt="" />
+          <div class="channel-info__details">
+            <h2 id="channel-name">Kevin Powell</h2>
+            <div class=channel-info__meta>
+              <span>@Kevin Powell</span>
+              <span>740K subscribers</span>
+              <span>614 videos</span>
+            </div>
+            <p>Helping you learn how to make the web...</p>
+          </div>
+        </div>
+      
+        <div role="tablist" aria-labelledby="channel-name">
+          <button id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">Home
+          </button>
+          <button id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">Videos
+          </button>
+          <button id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">Shorts
+          </button>
+          <button id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">Playlists
+          </button>
+          <button id="tab-5" role="tab" aria-controls="tabPanel-5" aria-selected="false" tabindex="-1">Community
+          </button>
+          <button id="tab-6" role="tab" aria-controls="tabPanel-6" aria-selected="false" tabindex="-1">Channels
+          </button>
+          <button id="tab-7" role="tab" aria-controls="tabPanel-7" aria-selected="false" tabindex="-1">About
+          </button>
+        </div>
+        <div class="tab-panels">
+          <div id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <p>My intro video and some curratedfalse content</p>
+          </div>
+      
+          <div id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+            <p>My hundreds of videos, all right here</p>
+          </div>
+      
+          <div id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+            <p>A lot of content, all under 60 seconds</p>
+          </div>
+      
+          <div id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+            <p>Binge watch some playlists here</p>
+          </div>
+      
+          <div id="tabPanel-5" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-5">
+            <p>Community posts and polls and whatnot</p>
+          </div>
+      
+          <div id="tabPanel-6" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-6">
+            <p>Channels I like go here I guess</p>
+          </div>
+      
+          <div id="tabPanel-7" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-7">
+            <p>About me</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <script src="animateTabs.js">
+        
+      </script>
+</body>
+</html>
